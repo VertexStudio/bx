@@ -30,7 +30,21 @@ bx_srcs = [
 ]
 
 cc_library(
-    name = "bx",
+    name = "bx-linux",
+    srcs = bx_srcs,
+    hdrs = glob([
+        "**",
+    ]),
+    includes = [
+        "3rdparty",
+        "include",
+    ],
+    deps = [
+    ],
+)
+
+cc_library(
+    name = "bx-macos",
     srcs = bx_srcs,
     hdrs = glob([
         "**",
@@ -43,3 +57,4 @@ cc_library(
     deps = [
     ],
 )
+
