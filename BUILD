@@ -38,6 +38,7 @@ cc_library(
     includes = [
         "3rdparty",
         "include",
+        "include/compat/osx",
     ],
     deps = [
     ],
